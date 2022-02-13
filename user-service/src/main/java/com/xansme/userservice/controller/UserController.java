@@ -1,7 +1,7 @@
 package com.xansme.userservice.controller;
 
 import com.xansme.userservice.dto.ResponseTemplateDTO;
-import com.xansme.userservice.entity.User;
+import com.xansme.userservice.entity.User; 
 import com.xansme.userservice.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
