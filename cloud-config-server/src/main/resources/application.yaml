@@ -1,0 +1,12 @@
+server:
+  port: 9696
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: https://github.com/xans-me/spring-microservice-example-config-server
