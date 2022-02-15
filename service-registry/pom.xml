@@ -27,8 +27,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
+
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -67,6 +75,7 @@
                     <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                 </configuration>
                 <dependencies>
+                    <!-- To make this work on JDK 9+ -->
                     <dependency>
                         <groupId>javax.activation</groupId>
                         <artifactId>javax.activation-api</artifactId>
@@ -74,6 +83,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
         </plugins>
     </build>
 
