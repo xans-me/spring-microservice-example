@@ -101,7 +101,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>teukumulyaichsan/department-service</repository>
+                    <repository>muliaichsan17/department-service</repository>
                     <tag>${project.version}</tag>
                     <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                 </configuration>

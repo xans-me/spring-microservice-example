@@ -63,3 +63,13 @@ spring:
                         /lwWlQGhnqKo48lnomal1SkXngSL35MLprnghPlyRf4QI62VZ3NzTc5B9tbnKYi3
                         AhMpxMADynimOfUstWOvXrGAsFV2MLZjlc4LMhlHulzxiRONlk5TCx7KF9U8
                         -----END RSA PRIVATE KEY-----
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: eureka-0
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
